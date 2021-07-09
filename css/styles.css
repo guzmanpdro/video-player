@@ -1,0 +1,70 @@
+@import './buttons.css';
+
+body {
+    height: 100vh;
+    background: url('../images/Ellipse-mobile-1.svg') top left no-repeat, url('../images/Ellipse-mobile-2.svg') bottom right no-repeat, #26B4BC;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+    max-width: 900px;
+    margin: auto;
+}
+
+.player {
+    position: relative;
+}
+
+.player video {
+    width: 100%;
+    aspect-ratio: 16/9;
+    vertical-align: middle;
+    object-fit: cover;
+}
+
+.player-title {
+    position: absolute;
+    top: 0;
+    left: .5em;
+    font-size: 1.3rem;
+    color: white;
+}
+
+.player-actions {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.player-progress {
+    display: flex;
+    padding: .5em;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.player-progress input {
+    flex: 1;
+}
+
+.player-overlay {
+    opacity: 0;
+    transition: .4s opacity;
+}
+
+.player:hover .player-overlay {
+    opacity: 1;
+}
+
+@media (min-width: 768px) {
+    body {
+        background: url('../images/Ellipse-2.svg') top left no-repeat, url('../images/Ellipse-1.svg') bottom right no-repeat, #26B4BC;
+    }
+}

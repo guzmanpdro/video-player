@@ -1,0 +1,30 @@
+.button {
+    width: 32px;
+    height: 32px;
+    border: none;
+    margin-left: 1em;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.button:active {
+    transform: scale(.9);
+}
+
+#play {
+    background-image: url('../images/play.svg');
+}
+
+#pause {
+    background-image: url('../images/pause.svg');
+}
+
+#backward {
+    background-image: url('../images/-10.svg');
+}
+
+#forward {
+    background-image: url('../images/+10.svg');
+}
+
