@@ -7,11 +7,16 @@ body {
 }
 
 .wrapper {
+    height: 100vh;
     max-width: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: auto;
 }
 
 .player {
+    width: 100%;
     position: relative;
 }
 
